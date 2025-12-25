@@ -1,0 +1,129 @@
+/* Genel font */
+body {
+  font-family: 'Montserrat';
+  min-width: 300px; /* css-15 */
+}
+
+/* Button */
+.btn {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+/* Active link */
+.active {
+  background: black;
+  color: white;
+}
+
+/* Header */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem; /* css-1 */
+  margin: 10px 20px;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  padding: 15px 20px;
+  border: 1px solid black;
+  background-color: gray;
+  color: white;
+  text-decoration: none;
+}
+
+/* Main Container */
+.main-container {
+  text-align: center;
+  width: 80%;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+.main-container h1 {
+  text-transform: uppercase;
+}
+
+/* Main Section Image */
+.main-section img {
+  width: 100%;
+  display: block;
+}
+
+/* Advantages Section */
+.advantages-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.advantages-section img {
+  width: 15%;
+  aspect-ratio: 1 / 4;
+  object-fit: cover;
+}
+
+.advantages-section div {
+  width: 15%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background: gray;
+  padding: 20px 0;
+}
+
+footer button {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Responsive: max-width 500px */
+@media (max-width: 500px) {
+  .advantages-section {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .advantages-section img {
+    width: 45%;
+  }
+
+  .advantages-section div {
+    width: 100%;
+  }
+
+  .header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header nav a {
+    width: 50%;
+    text-align: center;
+    flex-grow: 1;
+  }
+}
+
+  
